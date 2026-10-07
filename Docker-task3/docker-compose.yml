@@ -1,0 +1,8 @@
+services:
+  nginx:
+    image: custom-nginx:latest
+    container_name: custom-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - /var/opt/nginx:/usr/share/nginx/html
